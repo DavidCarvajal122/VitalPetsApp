@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalPetsApp.Views.MascotasPage"
+             Title="Lista de Mascotas">
+
+    <StackLayout Padding="10">
+        <Button Text="Registrar nueva mascota" 
+                Clicked="OnNuevaMascotaClicked"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                CornerRadius="10"
+                Margin="0,0,0,10"/>
+
+        <CollectionView x:Name="MascotasListView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="#ccc" CornerRadius="8" Padding="10" Margin="0,0,0,10">
+                        <StackLayout>
+                            <Label Text="{Binding Nombre}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="{Binding Especie}" FontSize="14" />
+                            <Label Text="{Binding Raza}" FontSize="14" />
+                            <Label Text="{Binding FechaNacimiento, StringFormat='Nacimiento: {0:dd/MM/yyyy}'}" FontSize="14" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

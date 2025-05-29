@@ -1,4 +1,6 @@
-﻿namespace VitalPetsApp
+﻿using VitalPetsApp.Views;
+
+namespace VitalPetsApp
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            MainPage = new NavigationPage(new MascotasPage());
 
         }
     }

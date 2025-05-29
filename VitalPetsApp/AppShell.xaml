@@ -4,12 +4,13 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:VitalPetsApp"
+    xmlns:views="clr-namespace:VitalPetsApp.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="VitalPetsApp">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        Title="Home Mascotas"
+        ContentTemplate="{DataTemplate views:MascotasPage}"
         Route="MainPage" />
 
 </Shell>
