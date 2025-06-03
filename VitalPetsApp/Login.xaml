@@ -3,10 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VitalPetsApp.Login"
              Title="Login">
-    <VerticalStackLayout Padding="20" Spacing="10">
-        <Entry x:Name="usernameEntry" Placeholder="Usuario" />
-        <Entry x:Name="passwordEntry" Placeholder="Contraseña" IsPassword="True" />
-        <Button Text="Iniciar Sesión" Clicked="OnLoginClicked"/>
-        <Button Text="Registrarse" Clicked="OnGoToRegisterClicked"/>
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Entry x:Name="usernameEntry" Placeholder="Usuario" />
+            <Entry x:Name="passwordEntry" Placeholder="Contraseña" IsPassword="True" />
+            <Button Text="Iniciar Sesión" Clicked="OnLoginClicked"/>
+            <Button Text="Registrarse" Clicked="OnGoToRegisterClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+    
 </ContentPage> 

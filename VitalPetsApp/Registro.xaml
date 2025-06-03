@@ -3,18 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VitalPetsApp.Registro"
              Title="Registro">
-    <VerticalStackLayout Padding="20" Spacing="15">
+    <ScrollView>
 
-        <Label Text="Usuario" FontAttributes="Bold"/>
-        <Entry x:Name="newUserEntry" Placeholder="Ingrese su usuario" />
+        <VerticalStackLayout Padding="20" Spacing="15">
 
-        <Label Text="Contraseña" FontAttributes="Bold"/>
-        <Entry x:Name="newPasswordEntry" Placeholder="Ingrese su contraseña" IsPassword="True" />
+            <Label Text="Usuario" FontAttributes="Bold" />
+            <Entry x:Name="newUserEntry" Placeholder="Ingrese su usuario" />
 
-        <Label Text="Confirmar Contraseña" FontAttributes="Bold"/>
-        <Entry x:Name="confirmPasswordEntry" Placeholder="Repita la contraseña" IsPassword="True" />
+            <Label Text="Contraseña" FontAttributes="Bold" />
+            <Entry x:Name="newPasswordEntry" Placeholder="Ingrese su contraseña" IsPassword="True" />
 
-        <Button Text="Registrarse" Clicked="OnRegisterClicked" />
+            <Label Text="Confirmar Contraseña" FontAttributes="Bold" />
+            <Entry x:Name="confirmPasswordEntry" Placeholder="Repita la contraseña" IsPassword="True" />
 
-    </VerticalStackLayout>
+            <Label Text="Número de teléfono" FontAttributes="Bold" />
+            <Entry x:Name="phoneEntry" Placeholder="Ingrese su número" Keyboard="Telephone" />
+
+            <Label Text="Correo electrónico" FontAttributes="Bold" />
+            <Entry x:Name="emailEntry" Placeholder="Ingrese su correo electrónico" Keyboard="Email" />
+
+            <Button Text="Registrarse" Clicked="OnRegisterClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+    
 </ContentPage>
