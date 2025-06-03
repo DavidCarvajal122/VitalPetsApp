@@ -8,7 +8,7 @@ namespace VitalPetsApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MascotasPage());
+            MainPage = new NavigationPage(new Login());
 
         }
     }
